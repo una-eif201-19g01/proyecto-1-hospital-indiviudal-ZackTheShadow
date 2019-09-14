@@ -14,6 +14,7 @@
  */
 
 
+
 #include "Paciente.h"
 
 Paciente::Paciente()
@@ -99,10 +100,7 @@ void Paciente::asignarDoctor(Doctor& doctor) {
 	tamanoDoctores++;
 }
 
-void Paciente::eliminarPaciente()
-{
 
-}
 
 void Paciente::setEstado(bool estad)
 {
@@ -185,14 +183,12 @@ std::string Paciente::imprimirCamaPacientes()
 
 }
 
-std::string Paciente::imprimirDoctorPacientes()
+std::string Paciente::imprimirDoctorPacientes(int numero)
 {
 	std::string reporte = "";
 
-	for (int cont = 0; cont < tamanoDoctores; cont++)
-	{
-		reporte = reporte + "\t[" + doctores.at(cont).imprimirDoctor()+ "]\n";
-	}
+		reporte = reporte + "[" + doctores.at(numero).imprimirDoctor() + "]\n";
+	
 
 	return reporte;
 

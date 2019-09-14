@@ -61,7 +61,6 @@ public:
 	void setGenero(std::string);
 	void asignarCama(Cama&);
 	void asignarDoctor(Doctor&);
-	void eliminarPaciente();
 	void setEstado(bool);
 	std::string getPatologia();
 	std::string getDireccion();
@@ -75,28 +74,10 @@ public:
 	bool getEstado();
 	std::string imprimirPaciente();
 	std::string imprimirCamaPacientes();
-	std::string imprimirDoctorPacientes();
-
-
-
-
-
-
-
+	std::string imprimirDoctorPacientes(int);
 
 
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 
